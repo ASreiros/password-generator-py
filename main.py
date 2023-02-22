@@ -26,6 +26,10 @@ for num in range(0, nr_numbers, 1):
     pos = random.randint(0, len(password))
     password.insert(pos, add)
 
+password_str = "".join(password)
+print(password_str)
+random.shuffle(password)
+password_str2 = "".join(password)
+print(password_str2)
 
-print("".join(password))
-
+# it is possible to use shuffle on list
